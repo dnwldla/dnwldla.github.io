@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Welcome to My Jekyll Site
+permalink: / 
 ---
 
 # Hello, World!

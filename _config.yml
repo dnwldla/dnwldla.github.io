@@ -1,2 +1,6 @@
 # url:              'http://127.0.0.1:4000'
 # baseurl:          '/phishGuard'
+collections:
+  pages:
+    output: true
+    permalink: /:path/  # URL 구조 설정
