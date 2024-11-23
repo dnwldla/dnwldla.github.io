@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - {{ site.title }}</title>
+    <!-- Google Fonts 링크 추가 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-  </header>
-  <main>
-    {{ content }}
-  </main>
-  <footer>
-    <p>&copy; 2024 My Jekyll Site</p>
-  </footer>
+  <div class="container">
+    <!-- 왼쪽 메뉴 -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 오른쪽 콘텐츠 영역 -->
+    <main class="content">
+      <h1>{{ page.title }}</h1>
+      <p>{{ content }}</p>
+    </main>
+  </div>
 </body>
 </html>
