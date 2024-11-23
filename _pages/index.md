@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome to My Jekyll Site
+title: About PhishGuard
 permalink: / 
 ---
 
