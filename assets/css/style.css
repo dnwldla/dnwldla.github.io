@@ -1,9 +1,11 @@
 body {
   font-family: 'Geist Mono', sans-serif;
+  margin: 0;
 }
 
 .container {
   display: flex;
+  flex-direction: row;
   height: 100vh;
 }
 
@@ -12,11 +14,14 @@ body {
   background-color: #333;
   color: white;
   padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sidebar ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar ul li {
@@ -43,15 +48,13 @@ body {
 .content h1 {
   font-size: 2rem;
   color: #333;
-  animation: fadeInSlideUp 1.5s ease-out; 
+  animation: fadeInSlideUp 1.5s ease-out;
 }
-
 
 .content p {
   font-size: 1rem;
   color: #555;
 }
-
 
 @keyframes fadeInSlideUp {
   0% {
@@ -61,5 +64,52 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    transform: translateY(0);
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .toggle-btn {
+    display: block;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
   }
 }
