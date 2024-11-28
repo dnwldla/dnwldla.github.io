@@ -18,12 +18,10 @@ PhishGuard is an intelligent solution designed to detect potential voice phishin
    
    
 
-
 ## Why PhishGuard?
 
 Voice phishing is an increasingly serious threat, with scammers impersonating trusted institutions to steal personal information. While traditional advice like "stay calm and composed" is often offered, it frequently fails in high-pressure situations. PhishGuard offers an intelligent alternative by evaluating the conversation's content in real-time, enabling users to make informed decisions during potentially dangerous calls.                                                                                                                                  
                                                                                                                                                 
-   
 
 
 ## How It Works
@@ -31,4 +29,12 @@ Voice phishing is an increasingly serious threat, with scammers impersonating tr
 1. **Call Content Analysis**: PhishGuard listens to the ongoing call and analyzes the text for common phishing indicators.
 2. **Real-Time Detection**: The system compares the conversation content against known phishing patterns and phrases.
 3. **Alert System**: If a phishing attempt is detected, PhishGuard immediately alerts the user, providing a warning.
+
+## Contact Information
+
+If you have any questions or need support, feel free to reach out to us at:  
+[leeemjw@gmail.com](mailto:leeemjw@gmail.com)  
+[jelome1004@naver.com](mailto:jelome1004@naver.com)  
+[kkkwwwone@naver.com](mailto:kkkwwwone@naver.com)  
+[bogeun5533@naver.com](mailto:bogeun5533@naver.com)
 
